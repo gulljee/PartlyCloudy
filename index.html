@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <form>
+            <div class="form-group">
+                <label for="cityInp">Enter City Name:</label>
+                <input id="cityInp" type="text" placeholder="e.g. London, New York, Tokyo">
+            </div>
+            <input id="cityBtn" type="submit" value="Search">
+        </form>
+        
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+        
+        <div class="weather-info">
+            <div class="weather-item">
+                <span>Description:</span>
+                <span class="desc"></span>
+            </div>
+            <div class="weather-item">
+                <span>Temperature:</span>
+                <span class="temp"></span>
+            </div>
+            <div class="weather-item">
+                <span>Humidity:</span>
+                <span class="humidity"></span>
+            </div>
+            <div class="weather-item">
+                <span>Wind Speed:</span>
+                <span class="windSpeed"></span>
+            </div>
+            <div class="weather-item">
+                <span>Sunrise:</span>
+                <span class="sunRise"></span>
+            </div>
+            <div class="weather-item">
+                <span>Sunset:</span>
+                <span class="sunSet"></span>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
